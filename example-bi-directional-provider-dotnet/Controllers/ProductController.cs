@@ -40,5 +40,20 @@ namespace Provider.Controllers
 
             return product;
         }
+
+        [HttpGet("{id:int}")]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public ActionResult<Product> GetProduct2(int id)
+        {
+            var product = products.FirstOrDefault(product => product.id == id);
+
+            if (product == null)
+            {
+                return new NotFoundResult();
+            }
+
+            return product;
+        }
     }
 }
