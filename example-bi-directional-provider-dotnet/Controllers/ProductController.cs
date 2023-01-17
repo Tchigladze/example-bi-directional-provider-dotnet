@@ -12,9 +12,9 @@ namespace Provider.Controllers
     {
         private static List<Product> products = new List<Product>
             {
-                new Product { id = 2, type = "SNACK", name = "muesli bar",Weight = 2},
-                new Product { id = 10, type = "LUNCH", name = "sandwich", Weight = 3},
-                new Product { id = 27, type = "DINNER", name = "burg1er", Weight = 4}
+                new Product { id = 2, type = "SNACK", name = "muesli bar"},
+                new Product { id = 10, type = "LUNCH", name = "sandwich"},
+                new Product { id = 27, type = "DINNER", name = "burg1er"}
 
             };
 
